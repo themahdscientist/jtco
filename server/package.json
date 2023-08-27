@@ -13,7 +13,7 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/mahdscientist/masanai.git"
+      "url": "git+https://github.com/mahdscientist/jtco.git"
    },
    "keywords": [
       "sofware_development",
@@ -26,9 +26,9 @@
    "author": "Ifeanyichukwu Akudinobi",
    "license": "MIT",
    "bugs": {
-      "url": "https://github.com/mahdscientist/masanai/issues"
+      "url": "https://github.com/mahdscientist/jtco/issues"
    },
-   "homepage": "https://github.com/mahdscientist/masanai#readme",
+   "homepage": "https://github.com/mahdscientist/jtco#readme",
    "dependencies": {
       "@sentry/node": "^7.40.0",
       "axios": "^1.3.4",
