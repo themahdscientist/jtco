@@ -1,0 +1,31 @@
+{{#section 'head'}}
+   <style>
+      .errors {
+         display: flex;
+      }
+
+      .errors div {
+         padding: 0.5rem;
+         margin: 0.5rem;
+      }
+   </style>
+{{/section}}
+<div class="errors">
+   {{#if success_msg}}
+      <div class='alert alert-success show' role='alert'>
+         {{success_msg}}
+      </div>
+   {{/if}}
+   {{#if warning_msg}}
+      {{#each warning_msg as |err|}}
+         <div class='alert alert-warning show' role='alert'>
+            {{err}}
+         </div>
+      {{/each}}
+   {{/if}}
+   {{#if error}}
+      <div class='alert alert-danger show' role='alert'>
+         {{error}}
+      </div>
+   {{/if}}
+</div>

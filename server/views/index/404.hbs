@@ -1,0 +1,42 @@
+{{> _brand}}
+{{#section "head"}}
+   <style>
+      .not-found-container {
+         display: flex;
+         padding: 1rem;
+         justify-content: space-evenly;
+         align-items: center;
+      }
+
+      .not-found-text {
+         padding: 0.8rem;
+         text-align: center;
+      }
+
+      @media screen and (width <=936px) {
+         .not-found-container {
+            display: block;
+         }
+
+         .not-found-image {
+            width: 100%;
+            height: auto;
+         }
+      }
+   </style>
+{{/section}}
+<main class="404 p-4">
+   <p class=" not-found-text lead">404 &hyphen; Page Not Found</p>
+   <div class="not-found-container">
+      <article>
+         <p class="lead">Oops&excl; Something went wrong.</p>
+         <p>Don&apos;t worry, it&apos;s just a missing link or a broken navigation. The page you requested for may not
+            exist, or
+            no longer resides here if it does.</p>
+         <p>There&apos;s nothing to be scared off&excl; Go ahead and click on <a href="/" title="Home Page">this</a>
+            link
+            to be redirected to the more familiar Home page.</p>
+      </article>
+      <img class="not-found-image" src="/assets/images/not_found.svg" alt="Not Found Image" />
+   </div>
+</main>

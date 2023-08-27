@@ -1,0 +1,42 @@
+{{> _brand}}
+{{#section 'head'}}
+   <style>
+      .server-error-container {
+         display: flex;
+         padding: 1rem;
+         justify-content: space-evenly;
+         align-items: center;
+      }
+
+      .server-error-text {
+         padding: 0.8rem;
+         text-align: center;
+      }
+
+      .server-error-image {
+         width: 35%;
+         height: auto;
+      }
+
+      footer {
+         position: absolute;
+         bottom: 0;
+         width: 100%;
+      }
+   </style>
+{{/section}}
+<main class="500">
+   <p class="server-error-text">500 &hyphen; Critical Server Error</p>
+<div class="server-error-container">
+   <article>
+      <p class="lead">Jeez, The Server&apos;s Gone Haywire&excl;</p>
+      <p>There seems to be tumult in parsing the page requested. But don&apos;t worry, it&apos;s not you. It&apos;s us.
+      </p>
+      <p>This rarely happens to any of our servers. Nonetheless, we are currently undergoing troubleshooting diagnostics
+         and a crash log of this event has been generated and sent to us for further analysis.</p>
+      <p>If you&apos;re not redirected automatically, please click <a href="/" title="Home Page">this</a> link to resume
+         at the Home page.</p>
+   </article>
+   <img class="server-error-image" src="/assets/images/server-error.svg" alt="Server Error Image">
+</div>
+</main>

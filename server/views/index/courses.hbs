@@ -1,0 +1,17 @@
+<main class="courses">
+   <h1>Courses Training</h1>
+   {{#each courses}}
+      <div class="course">
+         <h3>{{name}}</h3>
+         <p>{{description}}</p>
+         {{#if inSeason}}
+            <span class="price">{{price}}</span>
+            <a href="/cart/add?sku={{sku}}" class="btn btn-default">Buy Now&excl;</a>
+         {{else}}
+            <span class="out-of-season">We&apos;re sorry, this course is currently not in season.</span>
+            {{!-- The "notify me when this course is in season" page will be our next task. --}}
+            <a href="/notify-me-when-in-season?sku={{sku}}">Notify me when this course is in season</a>
+         {{/if}}
+      </div>
+   {{/each}}
+</main>

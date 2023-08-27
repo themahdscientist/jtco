@@ -1,0 +1,56 @@
+{{> _header}}
+{{> _navigation}}
+<main>
+  <section id="hero-intro">
+    <article class="bg-dark text-light hstack p-5 text-center">
+      <div class="intro-1">
+        <h1>Hi there&excl; fellow <span class="theirs">Netizens.</span>
+          <br>Welcome to the official website of the world&apos;s top&hyphen;notch IT consulting
+          company.<br><span class="ours">JavaTechnovation</span> is our name!
+        </h1>
+        <hr>
+        {{#if ip}}
+          <p class="ip-address">PS&colon; your IP address is <span class="theirs">{{ip}}</span></p>
+        {{/if}}
+      </div>
+      <div>
+        <img src="/assets/images/hero.png" alt="Anonimus" class="img-fluid">
+      </div>
+    </article>
+  </section>
+  <section id="hot-tech">
+    <h1 class="title text-center p-4 fs-1 fw-bold">Vogue Tech</h1>
+    <article class="hstack p-5 text-center">
+      <div>
+        <img src="/assets/images/static_assets.svg" alt="Web Technologies" class="img-fluid">
+      </div>
+      <div class="intro-2">
+        <h2 class="text-uppercase fw-bold">Get acquainted with the latest in the <span
+            class="text-info">web development</span> industry.</h2>
+        <p class="lead">Dive right into <span class="theirs">learning web technologies</span> such
+          as ReactJS, Django, ExpressJS, Laravel, NextJS and start making the <span
+            class="ours">steady&hyphen;figure income.</span>
+        </p>
+        <hr>
+        <p class="lead">It&apos;s time to be productive <span class="ours">&check;</span></p>
+        <a href="#" class="btn btn-danger">Read more &circledast;</a>
+      </div>
+    </article>
+  </section>
+  <section id="tech-courses">
+    <div class="bg-dark text-light">
+      <h1 class="title text-center p-4 fs-1 fw-bold">Courses &amp; Technologies Offered</h1>
+      <article class="d-grid">
+        <div class="img-container" data-name="html"><img src="/assets/images/html.png" loading="lazy" alt="html"></div>
+        <div class="img-container" data-name="css"><img src="/assets/images/css-code.jpg" loading="lazy" alt="css"></div>
+        <div class="img-container" data-name="javascript"><img src="/assets/images/js.png" loading="lazy" alt="javascript"></div>
+        <div class="img-container" data-name="reactjs"><img src="/assets/images/reactjs.png" loading="lazy" alt="reactjs"></div>
+        <div class="img-container" data-name="python"><img src="/assets/images/py-code.jpg" loading="lazy" alt="python"></div>
+        <div class="img-container" data-name="bootstrap"><img src="/assets/images/bootstrap.png" loading="lazy" alt="bootstrap"></div>
+        <div class="img-container" data-name="nodejs"><img src="/assets/images/node.png" loading="lazy" alt="nodejs"></div>
+        <div class="img-container" data-name="wordpress"><img src="/assets/images/wordpress.png" loading="lazy" alt="wordpress"></div>
+        <div class="img-container" data-name="laravel"><img src="/assets/images/laravel.png" loading="lazy" alt="laravel"></div>
+      </article>
+    </div>
+  </section>
+</main>
